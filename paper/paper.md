@@ -16,6 +16,7 @@ tags:
   - FAIR
   - RDM
   - Bioschemas
+
 authors:
   - name: Daniel Arend
     orcid: 0000-0002-2455-5938
