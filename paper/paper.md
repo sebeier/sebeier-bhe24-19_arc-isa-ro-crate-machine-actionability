@@ -1,11 +1,6 @@
 ---
-title: 'BioHackEU24 report: Creating user benefit from ARC-ISA RO-Crate machine-actionability & Increasing FAIRness of digital a'
-tags: [RO-Crate, Bioschemas, Research Data Management, ISA, ARC]
-
----
-
----
 title: 'BioHackEU24 report: Creating user benefit from ARC-ISA RO-Crate machine-actionability & Increasing FAIRness of digital agrosystem resources by extending Bioschemas'
+tags: [RO-Crate, Bioschemas, Research Data Management, ISA, ARC]
 title_short: 'BioHackEU24 #19: arc-isa-ro-crate-machine-actionability | #24: increasing-fairness-of-digital-agrosystem'
 tags:
   - ARC
@@ -16,7 +11,6 @@ tags:
   - FAIR
   - RDM
   - Bioschemas
-
 authors:
   - name: Daniel Arend
     orcid: 0000-0002-2455-5938
