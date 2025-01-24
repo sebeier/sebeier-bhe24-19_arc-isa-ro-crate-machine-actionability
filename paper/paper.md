@@ -107,7 +107,7 @@ group: Project 19 & Project 24
 git_url: https://github.com/sebeier/sebeier-bhe24-19_arc-isa-ro-crate-machine-actionability
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
-authors_short: Arend, Bauer \emph{et al.}
+authors_short: Arend \emph{et al.}
 ---
 
 
