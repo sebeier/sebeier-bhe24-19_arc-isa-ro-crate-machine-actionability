@@ -141,7 +141,7 @@ The retrievability and harmonisation of metadata is important for improving the 
 ## Extending Schema.org for the agrosystem domain
 To increase the findability of datasets from the agrosystem domain, core entities of research projects, such as crops and soils, need to be described in the respective metadata instances. A schema focussed on findability is [Schema.org](https://schema.org/) and its life science focussed extension [Bioschemas](https://bioschemas.org/). In the context of project 24, core agrosystem entities were identified based on the requirements of use cases of the [FAIRagro project](https://fairagro.net/) (part of the German National Research Data Infrastructure NFDI) [@citesAsAuthority:Specka2023] for searching datasets. Multiple ways on how to create Bioschemas metadata descriptions of these entities were explored. The goal of the project was to identify where the schema needs to be extended for the agrosystem domain.
 
-The initial idea aimed at designing new types, planned to be submitted as drafts to the Bioschemas community. To this end, we worked on example datasets that had been selected in advance to broadly represent different agronosystem related important use cases. One of these [datasets](https://data.fz-juelich.de/dataset.xhtml?persistentId=doi:10.26165/JUELICH-DATA/QJIY7C) contained information on crops, describing their taxonomic species ranks as well as their specific variety names.
+The initial idea aimed at designing new types, planned to be submitted as drafts to the Bioschemas community. To this end, we worked on example datasets that had been selected in advance to broadly represent different agrosystem related important use cases. One of these [datasets](https://data.fz-juelich.de/dataset.xhtml?persistentId=doi:10.26165/JUELICH-DATA/QJIY7C) contained information on crops, describing their taxonomic species ranks as well as their specific variety names.
 
 A new potential 'Crop' type for Bioschemas was discussed, which could be defined as a subtype of the already existing [BioChemEntity](https://bioschemas.org/BioChemEntity) type. The 'BioChemEntity' type already includes the 'taxonomicRange' property, which can represent a crop species by linking to established semantic resources, such as the [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy). To addresss the need for more granular information, such as details on specific crop varieties that are critical for satisfying more detailed search queries, a new property 'variety' could be introduced. This property could accept values either as a string or as a link to a semantic resource detailing the variety, if such resources are available.
 
@@ -266,12 +266,12 @@ In addition to increasing the findability of research data within the agrosystem
 
 The basic idea of integrating ARCs does not require any changes to the existing implementations of metadata schemas of infrastructure providers. Instead of applying harmonised metadata types at the infrastructure level, ARCs can be created from any data structure given by the research data infrastructure, e.g. a common relational database schema. These data structures serve as building blocks for the ARC, with their components corresponding to the ISA headers in ISA files as schematically shown in Figure 1.
 
-![**Figure 1:** Schematic flow of creating arbitrary ARCs from any kind of data structrue.](./sqltoarc.png)
+![Schematic flow of creating arbitrary ARCs from any kind of data structrue.](./sqltoarc.png)
 
 
 The actual data integration takes place at the level of the integrated ARC ontology, where domain and ontology experts define the concepts and identifiers used. Figure 2 displays a condensed example describing this process.
 
-![**Figure 2:** Concept to data harmonization using the ontology provides by the ARC datahub.](./ARC_ontology.png)
+![Concept to data harmonization using the ontology provides by the ARC datahub.](./ARC_ontology.png)
 
 This ontology-driven approach allows the resulting ARCs to be harmonised by applying cross-references that establish links between heterogeneous attributes within ARC fields. By putting the harmonisation process in the hands of domain experts, this method avoids placing additional demands on research data infrastructure providers, while still enabling a consistent and interoperable framework for data integration across different domains.
 
